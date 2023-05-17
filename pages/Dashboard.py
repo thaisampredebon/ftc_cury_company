@@ -87,9 +87,9 @@ st.sidebar.markdown('## Selecione a data limite:')
 
 date_slider = st.sidebar.slider(
     'Arraste o marcador até a data desejada.',
-    value = pd.DatetimeIndex(2022, 4, 6),
-    min_value = pd.DatetimeIndex(2022, 2, 11),
-    max_value = pd.DatetimeIndex(2022, 4, 6),
+    value = pd.to_datetime('2022, 4, 6').to_pydatetime(),
+    min_value = pd.to_datetime('2022, 2, 11').to_pydatetime(),
+    max_value = pd.to_datetime('2022, 4, 6').to_pydatetime(),
     format = 'DD-MM-YYYY',
     label_visibility = 'collapsed')
    
